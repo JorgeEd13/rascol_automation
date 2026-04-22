@@ -29,6 +29,8 @@ def open_browser():
         "download.prompt_for_download": False,
         "download.directory_upgrade": True,
         "safebrowsing.enabled": True,
+        # Permite downloads múltiplos automáticos sem popup de confirmação
+        "profile.default_content_setting_values.automatic_downloads": 1,
     }
     options.add_experimental_option("prefs", prefs)
 

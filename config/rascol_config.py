@@ -4,15 +4,15 @@ Leitura da seção [RASCOL] do .env compartilhado.
 Formato esperado no .env:
 
     [RASCOL]
-    usuario = jorge.edson
-    senha   = RasCol2025
+    usuario = 
+    senha   = 
     filial  = JABOATAO
 """
 
 from inlog_automation.config.user_config import _find_config_file
 
-DEFAULT_RASCOL_USERNAME = "jorge.edson"
-DEFAULT_RASCOL_PASSWORD = "RasCol2025"
+DEFAULT_RASCOL_USERNAME = ""
+DEFAULT_RASCOL_PASSWORD = ""
 DEFAULT_RASCOL_FILIAL   = "JABOATAO"
 
 

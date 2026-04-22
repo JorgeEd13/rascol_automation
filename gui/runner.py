@@ -6,7 +6,7 @@ Integra a GUI com o PontosExtractor.
 
 from rascol_automation.gui.main_gui import RasColGUI, ProgressWindow, show_result_dialog
 from rascol_automation.config.rascol_config import load_rascol_config
-from rascol_automation.config.settings import RASCOL_DOWNLOAD_DIR, SHAPES_DIR
+from rascol_automation.config.settings import RASCOL_DOWNLOAD_DIR, RASCOL_SHAPES_DIR, INLOG_SHAPES_DIR
 from rascol_automation.extractors.extractor_pontos import PontosExtractor
 
 
@@ -70,7 +70,7 @@ def main():
             f"Sem registros: {extractor.total_skipped}\n"
             f"Erros: {len(extractor.errors)}\n"
             f"Downloads: {RASCOL_DOWNLOAD_DIR}\n"
-            + (f"Shapefiles: {SHAPES_DIR}" if result.get("post_process") else "")
+            + (f"Shapefiles: {INLOG_SHAPES_DIR} / {RASCOL_SHAPES_DIR.name}" if result.get("post_process") else "")
         )
         if extractor.errors:
             details += "\n\nErros:\n" + "\n".join(extractor.errors[:10])

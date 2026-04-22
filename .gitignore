@@ -1,0 +1,36 @@
+# ── Artefatos de build ────────────────────────────────────────
+build/
+dist/
+*.exe
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+*.spec.bak
+
+# ── Ambiente virtual ──────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Dados gerados / downloads ─────────────────────────────────
+# (vivem em Locar/dependencias/, ignorados pelo .gitignore raiz)
+
+# ── Jupyter ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Sistema Operacional ───────────────────────────────────────
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ── Editores ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Logs e temporários ────────────────────────────────────────
+*.log
+*.tmp
