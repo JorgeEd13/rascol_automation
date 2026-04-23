@@ -19,9 +19,9 @@ As credenciais e a filial são lidas da seção `[RASCOL]` do arquivo `Locar/dep
 
 ```ini
 [RASCOL]
-usuario = jorge.edson
-senha   = RasCol2025
-filial  = JABOATAO
+usuario = 
+senha   = 
+filial  = 
 ```
 
 Os diretórios de trabalho criados automaticamente dentro de `Locar/dependencias/`:
